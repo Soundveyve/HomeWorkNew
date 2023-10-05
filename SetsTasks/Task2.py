@@ -17,4 +17,4 @@ for i in testList:
         print(True)
         printSet.add(i)
 print (f"Изменяемые элементы, которые не были включены во множество: {list_edit}")
-print (f"Множество из изменяемых элементов: {printSet}") #
+print (f"Множество из изменяемых элементов: {printSet}")
