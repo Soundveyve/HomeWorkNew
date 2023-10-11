@@ -7,3 +7,10 @@
 
 Выдачу допуска реализуй как функцию.
 """
+def admission (students):
+    for i in students:
+        ball = int(input(f"Введите балл {i+1} ученика"))
+        if ball < 50:
+            print ("ПОЗДРАВЛЯЕМ! ВЫ УЧИТЕСЬ В НОВОМ МЕСТ...НО НЕ ЗДЕСЬ")
+
+students = int(input("Введите количество учеников: "))
