@@ -5,4 +5,17 @@
 Формула определения ИМТ: index = weight / (height * height)
 """
 def give_IMT ():
-    inmt = float(input("Введите ваш "))
+    height = float(input("Введите ваш рост: "))
+    mass = float(input("Введите вашу массу: "))
+    imt = mass / (height * height)
+    return imt
+def normal_IMT (imt):
+    if imt >= 18.5 and imt <= 25:
+        print (f"Ваш индекс массы тела {imt} в норме")
+    elif imt > 25:
+        print (f"Избыточный вес")
+    else:
+        print (f"У вас недостаток веса")
+
+imt = give_IMT()
+normal_IMT(imt)
