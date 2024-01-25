@@ -4,3 +4,15 @@
 Во втором классе вызовите метод класса родителя и добавьте к выводу надпись "но его отчислят если он не будет учить ООП".
 Создайте экземпляр второго класса с вашим именем и вызовите метод печатающий всю надпись.
 """
+class Bard():
+    def __init__(self, name):
+        self.name = name
+    def Bragging_rights(self):
+        self.name += ' ГЕНИЙ'
+        print(f'Теперь его зовут {self.name}')
+class Jester(Bard):
+    def Bragging_rights(self):
+        self.name += ' ГЕНИЙ'
+        print(f'{self.name}, но его отчислят, если он не будет учить ООП')
+new_student = Jester('Кирилл')
+new_student.Bragging_rights()

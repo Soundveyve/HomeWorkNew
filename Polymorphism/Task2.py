@@ -12,3 +12,19 @@
 Для проверки использовать действия над списком,
 в котором разместить объекты разных производных классов.
 """
+class Olimpic_quastion:
+    def __init__(self,name,num_quastion, num_test):
+        self.name = name
+        self.num_quastion = num_quastion
+        self.num_test = 'all'
+class All_or_Nothing(Olimpic_quastion):
+    def __init__(self, name,num_quastion,num_test,max_ball):
+        super().__init__(name,num_quastion,num_test)
+        self.max_ball = 0
+        if self.num_test == 'all':
+            self.max_ball = max_ball
+class Speed_qustion(Olimpic_quastion):
+    def __init__(self,name,num_quastion,num_test, time_for_ready, procent):
+        super().__init__(name,num_quastion,num_test)
+        self.time = time_for_ready
+        self.procent = procent
